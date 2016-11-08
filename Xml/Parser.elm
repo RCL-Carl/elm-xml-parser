@@ -12,22 +12,7 @@ import Combine.Char exposing (..)
 import Combine.Infix exposing (..)
 import String
 import Result as Result'
-
-
-type alias Name =
-  String
-
-
-type alias Key =
-  String
-
-
-type alias Value =
-  String
-
-
-type alias Attribute =
-  ( Key, Value )
+import Xml.Types exposing (..)
 
 
 {-| The XML AST representation -}

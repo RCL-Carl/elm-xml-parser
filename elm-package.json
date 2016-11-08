@@ -8,7 +8,8 @@
     ],
     "exposed-modules": [
         "Xml.Decode",
-        "Xml.Parser"
+        "Xml.Parser",
+        "Xml.Validator"
     ],
     "dependencies": {
         "Bogdanp/elm-combine": "2.0.0 <= v < 3.0.0",

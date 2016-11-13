@@ -15,7 +15,7 @@ import Maybe
 import Result
 import List
 import Xml.Types exposing (..)
-import Xml.Parser exposing( XmlAst(..), parseXml )
+import Xml.Parser exposing (parseXml)
 
 type XsdAst
     = Header

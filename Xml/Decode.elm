@@ -7,7 +7,8 @@ module Xml.Decode exposing (toJson)
 -}
 
 import Json.Encode exposing (string, object, list, array)
-import Xml.Parser exposing (XmlAst(..))
+import Xml.Types exposing (..)
+
 --import List.Extra as List
 import Array
 

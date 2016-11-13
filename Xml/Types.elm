@@ -14,3 +14,10 @@ type alias Value =
 
 type alias Attribute =
   ( Key, Value )
+
+{-| The XML AST representation -}
+type XmlAst
+  = Element Name (List Attribute) (List XmlAst)
+  | Body String
+  | Comment String
+  | CDATA String

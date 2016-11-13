@@ -1,10 +1,9 @@
-module Xml.Parser exposing (parseXml, XmlAst(..))
-
+module Xml.Parser exposing (parseXml)
 
 {-| A parser which converts XML into an XmlAst,
 which can be further transformed.
 
-@docs XmlAst, parseXml
+@docs parseXml
 -}
 
 import Combine exposing (..)
@@ -13,14 +12,6 @@ import Combine.Infix exposing (..)
 import String
 import Result as Result'
 import Xml.Types exposing (..)
-
-
-{-| The XML AST representation -}
-type XmlAst
-  = Element Name (List Attribute) (List XmlAst)
-  | Body String
-  | Comment String
-  | CDATA String
 
 
 spaces : Parser (List Char)
